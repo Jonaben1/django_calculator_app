@@ -18,6 +18,14 @@ html {
   left: 30%;
   width: 400px;
 }
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 400px;
+}
 
 .calculator-screen {
   width: 100%;
@@ -42,7 +50,6 @@ button {
   color: #333;
 
 }
-
 button:hover {
   background-color: #eaeaea;
 }
@@ -65,11 +72,12 @@ button:hover {
   background-color: #2e86c0;
   border-color: #337cac;
   color: #fff;
-  grid-row-start: 3;
+  grid-row-start: 2;
   grid-row-end: 6;
   height: 100%;
   grid-column-start: 4;
 }
+
 
 .equal-sign:hover {
   background-color: #4e9ed4;

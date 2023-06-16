@@ -1,12 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/clock.css' %}">
     <title></title>
   </head>
   <body>
-    <div class="calculator">
+    {% block top %} {% include 'clock.html' %} {% endblock top %}
+  <div class="calculator">
 
   <input type="text" class="calculator-screen" value="0" disabled />
 
@@ -42,5 +45,7 @@
 </div>
 
   </body>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/clock.js' %}"></script>
 </html>
 
